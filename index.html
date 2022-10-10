@@ -4,103 +4,198 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <title>Argentina Programa Portfolio web de Carolina Salanova</title>
 </head>
 <body>
     <div class="flex-contenedor">
         <!--nav-->
-        <div class="cont-nav"> 
-          <nav class="nav">
-               <a href="#" class="logo nav-link"><img class="nav-menu-link-img" src="C:\Users\dibun\Documents\MaquetaPorfolioCarolinaSalanova\ASSETS\iconos_redes\APLogo-20-20.png"></a>
-               <ul class="nav-menu">
-                 <li class="nav-menu-item">
-                     <a href="#" class="nav-menu-link"><img class="nav-menu-link-img" src="C:\Users\dibun\Documents\MaquetaPorfolioCarolinaSalanova\ASSETS\iconos_redes\github-white.png"></a>
-                 
-                     <a href="#" class="nav-menu-link"><img class="nav-menu-link-img" src="C:\Users\dibun\Documents\MaquetaPorfolioCarolinaSalanova\ASSETS\iconos_redes\linkedin-white.png"></a>
-                 
-                     <a href="#" class="nav-menu-link"><img class="nav-menu-link-img" src="C:\Users\dibun\Documents\MaquetaPorfolioCarolinaSalanova\ASSETS\iconos_redes\facebook-white.png"></a>
-                
-                     <a href="#" class="nav-menu-link"><img class="nav-menu-link-img" src="C:\Users\dibun\Documents\MaquetaPorfolioCarolinaSalanova\ASSETS\iconos_redes\twitter-square-white.png"></a>
-                     
-                     <a href="#" class="nav-menu-link"><button type="button" style="text-align: right; padding:2px 4px 0px 3px" class="btn btn-primary btn-sm">Login</button></a>
+        <nav class="navbar navbar-expand-lg bg-primary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="nav-menu-link-icono" src="C:\Users\dibun\Documents\MaquetaPorfolioCarolinaSalanova\ASSETS\iconos_redes\APLogo-20-20.png"></a>
+
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              </ul>
+              <ul class="navbar-nav  justify-content-end">
+                <li class="nav-item">
+                  <a href="#"><img class="nav-menu-link-img" src="C:\Users\dibun\Documents\MaquetaPorfolioCarolinaSalanova\ASSETS\iconos_redes\github.png"></a>
                 </li>
-             </ul>
-          </nav>
-        </div>
+                <li class="nav-item">
+                  <a href="#"><img class="nav-menu-link-img" src="C:\Users\dibun\Documents\MaquetaPorfolioCarolinaSalanova\ASSETS\iconos_redes\bxl-linkedin-square.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#"><img class="nav-menu-link-img" src="C:\Users\dibun\Documents\MaquetaPorfolioCarolinaSalanova\ASSETS\iconos_redes\bxl-facebook-square.png"></a>
+                </li>
+                <!--Boton para loguear-->
+                <li class="nav-item">
+                   <a  type="button" class="iconos" data-bs-target="#modalLogin" data-bs-toggle="modal">
+                       <img class="nav-menu-link-img" src="C:\Users\dibun\Documents\MaquetaPorfolioCarolinaSalanova\ASSETS\iconos_redes\lock.png" id="bloqueado">
+                   </a>
+                </li>
+             
+              </ul>
+            </div>
+        </nav>
         <!--header Banner -->
         <header>
-            <img alt="banner" src="C:\Users\dibun\Documents\MaquetaPorfolioCarolinaSalanova\ASSETS\banner_y_perfil\banner1.png"
-            id="img-banner">
+            <img class="img-fluid" src="C:\Users\dibun\Documents\MaquetaPorfolioCarolinaSalanova\ASSETS\banner_y_perfil\banner1.png" >  
         </header>
-        <!--articles-->
-        <!--Sección Acerca de-->
-       <article>
-          <section class="acerca de"> 
-            <table class="tabla">
-             <tr> 
+        <!--Secciones-->
+        <!-------ACERCA DE MI-------->
+        <section id="acerca_de" class="acerca">
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-3">
+                 <img class="rounded-circle w-75" id="imagenPerfil" 
+                 src="C:\Users\dibun\Documents\MaquetaPorfolioCarolinaSalanova\ASSETS\banner_y_perfil\AvatarMaker.png">
+                 <a  type="button" class="iconos" data-bs-target="#modalAcerca" data-bs-toggle="modal">
+                    <img class="nav-menu-link-img" src="C:\Users\dibun\Documents\MaquetaPorfolioCarolinaSalanova\ASSETS\iconos_crud\edit.png" id="editar">
+                 </a>
+              </div>
+              <div class="col-9 align-self-center">
+                 <h3>Acerca de mi</h3>
+                     <p>
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus porro odit, 
+                         nostrum molestiae, ducimus sequi sint provident optio quos in repellat placeat.
+                          Nostrum eum nisi dolorem, aliquid reiciendis magnam aut?
+                     </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3">
+                 <h4>Carolina Salanova</h3>
+                 <h5>Full Stack Developer student</h5>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        </div>
+        </section>
+        <!-------EXPERIENCIA LABORAL-------->
+        <section id="experiencia" class="experiencias">
+          <div class="container text-center">
+            <table class="table table-bg-#rgb(255, 226, 146)">
+              <thead>
                 <tr>
-                    <td><img src="C:\Users\dibun\Documents\MaquetaPorfolioCarolinaSalanova\ASSETS\banner_y_perfil\AvatarMaker.png"></td>
-                </tr> 
-                <tr class="estilo_1">
-                    <td><h5 id="titulo">Full Stack Developer student</h5></td>
+                  <th scope="col" colspan="12">Experiencia Laboral</th>
                 </tr>
-             </tr> 
-            <tr class="estilo_2">
-                <td><h3 id="nombre_apellido">Carolina Salanova</h3></td>
-            </tr>
-            <tr>
-                <td><p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nesciunt eaque? Alias porro officia dicta itaque necessitatibus. Corrupti ipsum dicta dignissimos, dolorem quas numquam! Iusto natus aliquid facere et nesciunt.
-                </p></td>
-            </tr>
-            </table>
-          </section>
-        </article>  
-        <!--Experiencia-->
-        <article>
-            <table class="tabla">
-                <tr><td><h3>Experiencia</h3></td></tr>
-                <tr><td><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid est officiis debitis tempora eos harum, eligendi voluptas, natus iusto fuga perspiciatis veritatis non quia voluptatem quibusdam atque minima. Voluptatem, odio?</p></td></tr>
-            </table> 
-        </article>
-        <!--Educación-->
-        <article>
-            <table class="tabla">
-                <tr><td><h3>Educación</h3></td></tr>
-                <tr><td><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id est et eveniet debitis cumque voluptate cupiditate placeat doloribus ad recusandae quod inventore, exercitationem explicabo, ex libero aliquam, nobis corrupti alias?</p></td></tr> 
-            </table>
-        </article>  
-        <!--Hard & Soft Skills-->
-        <article>
-            <table class="tabla">
+              </thead>
+              <tbody>
                 <tr>
-                  <td><h3>Skills</h3></td>
+                  <td col-6>Empresa Estudio SG Editorial</td>
+                  <td col-4>Ilustradora Digital</td>
+                  <td>Desde</td>
+                  <td>Hasta</td>
+                  <td>Editar</td>
                 </tr>
                 <tr>
-                  <td></td>
+                  <td colspan="4">Responsable de la ambientación y color de comics</td>
+                  <td>Borrar</td>
                 </tr>
+              </tbody>
             </table>
-        </article>
-        <!--Proyectos--> 
-        <article> 
-           <table class="tabla">
-                <tr><td><h3>Proyectos</h3></td></tr>
-                <tr><td><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed mollitia, incidunt ab fuga minus iste recusandae explicabo voluptate, quam dolorem ratione necessitatibus ipsam dicta officia eligendi natus facilis esse cum!</p></td></tr> 
-           </table> 
-        </article> 
-        <!--Footer--> 
-        <footer>
-            <table class="tabla">
-                <tr><td><p>©2022 Carolina E. M. Salanova - Argentina -</p></td></tr>
-                <tr><td><p>Social media icons:<a href="https://www.iconshock.com/freeicons/collection/ant-design-icons">https://www.iconshock.com/freeicons/collection/ant-design-icons</a></p></td></tr>
+          </div>
+        </section>
+        <!-------EDUCACION-------->
+        <section id="educación" class="estudios">
+          <div class="container text-center">
+            <table class="table table-rb-#rgb(255, 226, 146) ">
+              <thead>
+                <tr>
+                  <th scope="col" colspan="12">Educación</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td col-6>Institución ISSD</td>
+                  <td col-4>Tecnicatura en Analisis de sistemas</td>
+                  <td>2014</td>
+                  <td>2015</td>
+                  <td>Editar</td>
+                </tr>
+                <tr>
+                  <td colspan="4">Carrera la cual no pude continuar, un semestre aprobado</td>
+                  <td>Borrar</td>
+                </tr>
+              </tbody>
             </table>
-        </footer>
-    </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+          </div>
+        </section>
+        <!-------SKILLS-------->
+        <section id="skill" class="skill">
+          <div class="container text-center">
+            
+          </div>
+        </section>
+        <!-------PROYECTOS-------->
+        <section id="proyecto" class="proyectos">
+          <div class="container text-center">
+            <table class="table table-rb-#rgb(255, 226, 146) ">
+              <thead>
+                <tr>
+                  <th scope="col" colspan="12">Proyectos</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Proyecto</td>
+                  <td colspan="2">Descripción</td>
+                  <td>Editar</td>
+                </tr>
+                <tr>
+                  <td>2014</td>
+                  <td>2015</td>
+                  <td>Imagen</td>
+                  <td>Borrar</td>
+                </tr>
+                <tr>
+                  <td colspan="4">url_al_Proyecto</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <!-------FOOTER-------->
+        <section id="footer" class="pie">
+          
+        </section>
+      <!---------------------MODALES------------------------->
+      <!-- MODALES-->
+      <!-- Modal LOGIN-->
+      <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+             <!--Aqui va el formulario para ingresar usuario y contraseña-->  
+             <div class="mb-3 row">
+                  <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                </div>
+                <div class="mb-3 row">
+                  <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword">
+                  </div>
+                </div>   
+             
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Iniciar sesion</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Acerca-->
+      <!-------------------------Scripts----------------------------------->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

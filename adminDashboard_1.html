@@ -1,0 +1,449 @@
+<!--DASHBOARD es la administracion de la pagina-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Argentina Programa Portfolio web de Carolina Salanova</title>
+</head>
+<body>
+    <div class="flex-contenedor">
+        <!--nav-->
+        <nav class="navbar navbar-expand-lg bg-primary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="nav-menu-link-icono" src="C:\Users\dibun\Documents\MaquetaPorfolioCarolinaSalanova\ASSETS\iconos_redes\APLogo-20-20.png"></a>
+
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              </ul>
+              <ul class="navbar-nav  justify-content-end">
+                <li class="nav-item">
+                  <a href="#"><img class="nav-menu-link-img" src="C:\Users\dibun\Documents\MaquetaPorfolioCarolinaSalanova\ASSETS\iconos_redes\github.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#"><img class="nav-menu-link-img" src="C:\Users\dibun\Documents\MaquetaPorfolioCarolinaSalanova\ASSETS\iconos_redes\bxl-linkedin-square.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#"><img class="nav-menu-link-img" src="C:\Users\dibun\Documents\MaquetaPorfolioCarolinaSalanova\ASSETS\iconos_redes\bxl-facebook-square.png"></a>
+                </li>
+                <!--Boton para loguear-->
+                <li class="nav-item">
+                   <a  type="button" class="iconos" data-bs-target="#modalLogin" data-bs-toggle="modal">
+                       <img class="nav-menu-link-img" src="C:\Users\dibun\Documents\MaquetaPorfolioCarolinaSalanova\ASSETS\iconos_redes\unlock.png" id="desbloqueado">
+                   </a>
+                </li>
+             
+              </ul>
+            </div>
+        </nav>
+   <div id="fondo">
+     <section class="p-2 m-0 border-0 bd-example">
+     <div class="container text-center">
+        <br>
+        <button type="button" class="btn btn-dark"><a href="C:\Users\dibun\Documents\MaquetaPorfolioCarolinaSalanova\index.html">
+           <img src="C:\Users\dibun\Documents\MaquetaPorfolioCarolinaSalanova\ASSETS\iconos_redes\home.png"></a>
+        </button>
+        <br>
+        <br>
+     <!--ACERCA DE-->    
+     <p>
+      <a class="btn btn-dark" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+        Acerca de mi
+      </a>
+     </p>
+     <div class="collapse" id="collapseExample1">
+      <div class="card card-body">
+        <div class="row">
+          <div class="col-10 order-first">
+              <div class="mb-3">
+                    <label for="formFileSm" class="form-label"><h5>Foto perfil</h5></label>
+                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+              </div>
+            </div>
+            <div class="col-2 order-last">
+               <br>
+               <button type="button" class="btn btn-dark">Guardar</button>
+            </div>
+        </div> 
+        <div class="row">
+           <div class="col-10 order-first">  
+              <div class="mb-3">
+                    <label for="formFileSm" class="form-label"><h5>Banner</h5></label>
+                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+              </div>
+            </div>
+            <div class="col-2 order-last">
+               <br>
+               <button type="button" class="btn btn-dark">Guardar</button>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-10 order-first">  
+              <div class="mb-3">
+                    <label for="formFileSm" class="form-label"><h5>Nombre</h5></label>
+                    <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+              </div>
+            </div>
+            <div class="col-2 order-last">
+               <br>
+               <button type="button" class="btn btn-dark">Guardar</button>
+            </div>
+        </div> 
+        <div class="row">
+          <div class="col-10 order-first">   
+              <div class="mb-3">
+                    <label for="formFileSm" class="form-label"><h5>Apellido</h5></label>
+                    <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+              </div>
+            </div>
+            <div class="col-2 order-last">
+               <br>
+               <button type="button" class="btn btn-dark">Guardar</button>
+            </div>
+        </div> 
+        <div class="row">
+          <div class="col-10 order-first"> 
+              <div class="mb-3">
+                    <label for="formFileSm" class="form-label"><h5>Titulo</h5></label>
+                    <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+              </div>
+          </div>
+          <div class="col-2 order-last">
+             <br>
+             <button type="button" class="btn btn-dark">Guardar</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-9 order-first">         
+              <div class="mb-3">
+                    <label for="formFileSm" class="form-label"><h5>Acerca de mi</h5></label>
+                    <textarea class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label="With textarea"></textarea>
+              </div>
+          </div>
+          <div class="col-3 order-last">
+            <div class="btn-group btn-group-sm" role="group">
+              <button type="button" class="btn">
+                  <img class="nav-menu-link-img" src="C:\Users\dibun\Documents\MaquetaPorfolioCarolinaSalanova\ASSETS\iconos_crud\edit.png" id="editar">
+              </button>
+              <button type="button" class="btn">
+                  <img class="nav-menu-link-img" src="C:\Users\dibun\Documents\MaquetaPorfolioCarolinaSalanova\ASSETS\iconos_crud\delete.png" id="delete">
+              </button>
+              <button type="button" class="btn">
+                  <img class="nav-menu-link-img" src="C:\Users\dibun\Documents\MaquetaPorfolioCarolinaSalanova\ASSETS\iconos_crud\plus-circle.png" id="guardar">
+              </button>
+            </div>
+             <!------->
+             <div class="row">
+              <div class="col-3">
+                <a  type="button" class="iconos" data-bs-target="#modal" data-bs-toggle="modal">
+                  
+                </a>
+              </div>
+              <div class="col-3">
+                <a  type="button" class="iconos" data-bs-target="#exampleModal" data-bs-toggle="modal">
+                  
+                </a>
+              </div>
+              <div class="col-3">
+                <a  type="button" class="iconos" data-bs-target="#exampleModal" data-bs-toggle="modal">
+                  
+                </a>
+              </div>
+            </div>
+             <!------>
+          </div>
+        </div>
+       </div>
+      <div>
+     </section>   
+     <!---------------------------------------------------------------------------->
+     <section class="p-2 m-0 border-0 bd-example">
+     <div class="container text-center">  
+     <!--EXPERIENCIA LABORAL-->
+       <p>
+        <a class="btn btn-dark" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+          Laboral
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample2">
+        <div class="card card-body">
+          <div class="row">
+             <div class="col-10 order-first">
+                 <div class="mb-3">
+                     <label for="formFileSm" class="form-label"><h5>Empresa</h5></label>
+                     <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+                 </div>
+             </div> 
+             <div class="col-2 order-last">
+                 <br>
+                 <button type="button" class="btn btn-dark">Guardar</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10 order-first">         
+                 <div class="mb-3">
+                     <label for="formFileSm" class="form-label"><h5>Puesto</h5></label>
+                     <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+                 </div>
+            </div>
+            <div class="col-2 order-last">
+                <br>
+                <button type="button" class="btn btn-dark">Guardar</button>
+            </div> 
+          </div>
+          <div class="row">
+            <div class="col-10 order-first">     
+                 <div class="mb-3">
+                     <label for="formFileSm" class="form-label"><h5>Desde</h5></label>
+                     <input class="form-control form-control-sm" type="date" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+                 </div>
+            </div>
+            <div class="col-2 order-last">
+                <br>
+                <button type="button" class="btn btn-dark">Guardar</button>
+            </div>   
+          </div>
+          <div class="row">
+            <div class="col-10 order-first">      
+                 <div class="mb-3">
+                     <label for="formFileSm" class="form-label"><h5>Hasta</h5></label>
+                     <input class="form-control form-control-sm" type="date" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+                 </div>
+            </div>
+            <div class="col-2 order-last">
+                <br>
+                <button type="button" class="btn btn-dark">Guardar</button>
+            </div>  
+          </div>      
+          <div class="row">
+            <div class="col-10 order-first">  
+                 <div class="mb-3">
+                     <label for="formFileSm" class="form-label"><h5>Estado actual</h5></label>
+                     <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+                 </div>
+            </div>
+            <div class="col-2 order-last">
+                <br>
+                <button type="button" class="btn btn-dark">Guardar</button>
+            </div> 
+          </div>
+          <div class="row">
+            <div class="col-10 order-first">        
+                 <div class="mb-3">
+                     <label for="formFileSm" class="form-label"><h5>Descripción</h5></label>
+                    <textarea class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label="With textarea"></textarea>
+                 </div>
+            </div>
+            <div class="col-2 order-last">
+                <br>
+                <button type="button" class="btn btn-dark">Guardar</button>
+            </div>    
+         </div>
+        </div>
+      </div>        
+     </section>  
+     <!---------------------------------------------------------------------------->
+     <!--EDUCACION-->
+     <section class="p-2 m-0 border-0 bd-example">
+      <div class="container text-center">  
+        <p>
+          <a class="btn btn-dark" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+            Educación
+          </a>
+        </p>
+        <div class="collapse" id="collapseExample3">
+          <div class="card card-body">
+            <div class="row">
+               <div class="col-10 order-first">
+                   <div class="mb-3">
+                       <label for="formFileSm" class="form-label"><h5>Institución</h5></label>
+                       <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+                   </div>
+               </div> 
+               <div class="col-2 order-last">
+                  <br>
+                  <button type="button" class="btn btn-dark">Guardar</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-10 order-first">         
+                   <div class="mb-3">
+                       <label for="formFileSm" class="form-label"><h5>Carrera/Curso</h5></label>
+                       <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+                   </div>
+              </div>
+              <div class="col-2 order-last">
+                  <br>
+                  <button type="button" class="btn btn-dark">Guardar</button>
+              </div> 
+            </div>
+            <div class="row">
+              <div class="col-10 order-first">     
+                   <div class="mb-3">
+                       <label for="formFileSm" class="form-label"><h5>Desde</h5></label>
+                       <input class="form-control form-control-sm" type="date" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+                   </div>
+              </div>
+              <div class="col-2 order-last">
+                  <br>
+                  <button type="button" class="btn btn-dark">Guardar</button>
+              </div>   
+            </div>
+            <div class="row">
+              <div class="col-10 order-first">      
+                   <div class="mb-3">
+                       <label for="formFileSm" class="form-label"><h5>Hasta</h5></label>
+                       <input class="form-control form-control-sm" type="date" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+                   </div>
+              </div>
+              <div class="col-2 order-last">
+                  <br>
+                  <button type="button" class="btn btn-dark">Guardar</button>
+              </div>  
+            </div>      
+            <div class="row">
+              <div class="col-10 order-first">        
+                   <div class="mb-3">
+                       <label for="formFileSm" class="form-label"><h5>Descripción</h5></label>
+                      <textarea class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label="With textarea"></textarea>
+                   </div>
+              </div>
+              <div class="col-2 order-last">
+                  <br>
+                  <button type="button" class="btn btn-dark">Guardar</button>
+              </div>    
+           </div>
+         </div>
+       </div>      
+     </section>  
+      <!---------------------------------------------------------------------------->
+      <!--SKILLS-->
+      <section class="p-2 m-0 border-0 bd-example">
+        <div class="container text-center">  
+            <p>
+              <a class="btn btn-dark" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+                Skills
+              </a>
+            </p>
+            <div class="collapse" id="collapseExample4">
+              <div class="card card-body">
+                <div class="row">
+                   <div class="col-10 order-first">
+                       <div class="mb-3">
+                           <label for="formFileSm" class="form-label"><h5>Skill</h5></label>
+                           <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+                       </div>
+                   </div> 
+                   <div class="col-2 order-last">
+                       <br>
+                       <button type="button" class="btn btn-dark">Guardar</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-10 order-first">     
+                       <div class="mb-3">
+                           <label for="formFileSm" class="form-label"><h5>Porcentage</h5></label>
+                           <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+                       </div>
+                  </div>
+                  <div class="col-2 order-last">
+                      <br>
+                      <button type="button" class="btn btn-dark">Guardar</button>
+                  </div>   
+                </div>
+            </div>
+          </div>      
+        </section>  
+       <!---------------------------------------------------------------------------->
+      <!--PROYECTOS-->
+      <section class="p-2 m-0 border-0 bd-example">
+      <div class="container text-center">
+        <p>
+           <a class="btn btn-dark" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
+            Proyectos 
+           </a>
+        </p>
+       <div class="collapse" id="collapseExample5">
+        <div class="card card-body">
+          <div class="row">
+            <div class="col-10 order-first">  
+                <div class="mb-3">
+                      <label for="formFileSm" class="form-label"><h5>Nombre</h5></label>
+                      <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+                </div>
+              </div>
+              <div class="col-2 order-last">
+                  <br>
+                  <button type="button" class="btn btn-dark">Guardar</button>
+              </div>
+          </div> 
+          <div class="row">
+            <div class="col-10 order-first">        
+                 <div class="mb-3">
+                     <label for="formFileSm" class="form-label"><h5>Descripción</h5></label>
+                    <textarea class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label="With textarea"></textarea>
+                 </div>
+            </div>
+            <div class="col-2 order-last">
+                <button type="button" class="btn btn-dark">Guardar</button>
+            </div>    
+          </div>
+          <div class="row">
+            <div class="col-10 order-first">  
+              <div class="mb-3">
+                   <label for="formFileSm" class="form-label"><h5>Imagen del proyecto</h5></label>
+                   <input class="form-control form-control-sm" id="formFileSm" type="file">
+              </div>
+            </div>
+            <div class="col-2 order-last">
+                <br>
+                <button type="button" class="btn btn-dark">Guardar</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10 order-first">
+                <div class="mb-3">
+                      <label for="formFileSm" class="form-label"><h5>Link al Proyecto</h5></label>
+                      <input class="form-control form-control-sm" id="formFileSm" type="file">
+                </div>
+              </div>
+              <div class="col-2 order-last">
+                  <br>
+                  <button type="button" class="btn btn-dark">Guardar</button>
+              </div>
+         </div>
+         <div class="row">
+            <div class="col-10 order-first">   
+                <div class="mb-3">
+                      <label for="formFileSm" class="form-label"><h5>Desde</h5></label>
+                      <input class="form-control form-control-sm" type="date" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+                </div>
+            </div>
+            <div class="col-2 order-last">
+                <br>
+                <button type="button" class="btn btn-dark">Guardar</button>
+            </div>
+          </div> 
+          <div class="row">
+            <div class="col-10 order-first"> 
+                <div class="mb-3">
+                      <label for="formFileSm" class="form-label"><h5>Hasta</h5></label>
+                      <input class="form-control form-control-sm" type="date" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+                </div>
+            </div>
+            <div class="col-2 order-last">
+                <br>
+                <button type="button" class="btn btn-dark">Guardar</button>
+            </div>
+          </div>
+       </div>
+     <div>
+     </section>
+  </div>
+  </div>
+  <!--Javascript-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>       
+  </body>
+</html>

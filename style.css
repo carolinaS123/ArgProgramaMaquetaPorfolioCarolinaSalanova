@@ -1,0 +1,132 @@
+/*Contenedor general*/
+*{
+    box-sizing: border-box;
+}
+.body{
+    height: 100%;
+	margin: 0;
+	padding: 10px;
+}
+
+/*------------------- nav -------------------*/
+.navbar-nav {
+    flex-direction: row !important;
+    
+}
+.navbar.navbar-expand-lg.bg-primary{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(70, 70, 70) !important;
+}
+
+.navbar-toggler {
+    display: none;
+}
+.nav-menu-link-img{
+     padding: 2px;
+}
+.nav-item:hover{
+    filter:alpha(opacity=50);
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+	-khtml-opacity: 0.5;
+}
+/*--------------------------------------------------*
+/*Header*/
+header{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.img-fluid{
+   border-bottom-right-radius: 1em;
+   border-bottom-left-radius: 1em;
+   width: 100%;
+   height: 100%;
+}
+/*ACERCA DE*/
+.acerca{
+    background-color: rgb(255, 226, 146);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 1em;
+}
+.col-7{
+    margin-top: 2em;
+}
+/*EXPERIENCIAS*/
+.experiencias{
+    background-color: rgb(255, 226, 146);
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 1px;
+    padding-right: 1px;
+    border-radius: 1em;
+}
+.table.table-dark{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+/*Educación*/
+.estudios{
+    background-color: rgb(255, 226, 146);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 1px;
+    padding-right: 1px;
+    border-radius: 1em;
+}
+/*Skills*/
+.skills{
+    background-color: rgb(255, 226, 146);
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 1px;
+    padding-right: 1px;
+    border-radius: 1em
+}
+
+/*Proyectos*/
+.proyectos{
+    background-color: rgb(255, 226, 146);
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 1px;
+    padding-right: 1px;
+    border-radius: 1em
+}
+/*-------------------------------------------------*/
+@media(max-width: 768px){
+    .navbar.navbar-expand-lg.bg-primary{
+      
+    }
+    .nav-menu-link-img{
+        height: 2rem;
+   }
+   .nav-menu-link-icono{
+   }
+}
